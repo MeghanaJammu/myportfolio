@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import Contact from "./components/Contact";
+import Projects from "./components/Projects";
+import About from "./components/About";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -126,71 +129,37 @@ const App = () => {
             <button className="mt-6 px-6 py-3 bg-[#7A2077] hover:bg-purple-600 text-[#E5CDEB] rounded-lg font-medium">
               View My Work
             </button>
-          </div>
-        </section>
 
-        {/* Other Sections */}
-        <section id="about" className="min-h-screen justify-center px-6 py-24">
-          <h2 className="text-6xl text-white font-bold mb-8 text-center">
-            About Me
-          </h2>
-
-          <div className="p-6 flex flex-col bg-[#7A2077]/60 md:flex-row items-center md:items-center gap-10 max-w-6xl mx-auto">
-            {/* Profile Image */}
-            <div className="w-20 h-20 md:w-40 md:h-40 md:ml-5 rounded-full flex items-center overflow-hidden shadow-lg">
-              <img
-                src="/pic_for_profile.jpg"
-                alt="Meghana Jammu"
-                className="w-full h-full object-cover object-center rounded-xl shadow-md"
-              />
+            <div className="absolute bottom-4 right-4 w-48 h-48 md:w-60 md:h-60 z-0 md:block hidden">
+              <iframe
+                src="https://my.spline.design/untitled-PDinlIMlg2reUJEhf2VAEXVS/"
+                frameborder="0"
+                width="100%"
+                height="100%"
+                style={{ background: "transparent" }}
+                allowTransparency="true"
+                title="3D Model"
+              ></iframe>
             </div>
 
-            {/* Content */}
-            <div className="text-center md:text-left space-y-4 max-w-xl">
-              <p className="text-lg leading-relaxed">
-                Hi, I’m{" "}
-                <span className="font-semibold text-purple-200">
-                  Meghana Jammu
-                </span>
-                , a passionate B.Tech Chemistry student at{" "}
-                <span className="text-purple-300">IIT Guwahati</span> with a
-                deep interest in technology and innovation.
-              </p>
-              <p className="text-lg leading-relaxed">
-                I'm a self-taught{" "}
-                <span className="text-purple-300 font-medium">
-                  Full Stack Developer
-                </span>{" "}
-                and an aspiring
-                <span className="text-purple-300 font-medium">
-                  {" "}
-                  Machine Learning Engineer
-                </span>
-                . I enjoy building meaningful applications and exploring the
-                intersection of science and tech.
-              </p>
-              <p className="text-lg leading-relaxed">
-                I come from a small village called{" "}
-                <span className="font-semibold text-purple-200">
-                  Koyyalagudem
-                </span>
-                ,In Andhra Pradesh and my father and mother are farmers,They
-                MOTIVATE me. I’m driven by curiosity and the desire to create
-                real impact.
-              </p>
+            {/* Mobile version: show below content */}
+            <div className="block md:hidden mt-8 w-48 h-48 mx-auto">
+              <iframe
+                src="https://my.spline.design/untitled-PDinlIMlg2reUJEhf2VAEXVS/"
+                frameborder="0"
+                width="100%"
+                height="100%"
+                style={{ background: "transparent" }}
+                allowTransparency="true"
+                title="3D Model Mobile"
+              ></iframe>
             </div>
           </div>
         </section>
 
-        <section id="projects" className="min-h-screen px-6 py-24">
-          <h2 className="text-3xl font-bold mb-4">Projects</h2>
-          <div className="h-64 bg-white/20 rounded-lg"></div>
-        </section>
-
-        <section id="contact" className="min-h-screen px-6 py-24">
-          <h2 className="text-3xl font-bold mb-4">Contact</h2>
-          <div className="h-64 bg-white/20 rounded-lg"></div>
-        </section>
+        <About />
+        <Projects />
+        <Contact />
       </div>
     </div>
   );
