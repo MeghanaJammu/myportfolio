@@ -1,0 +1,13 @@
+# Ignore dependencies
+viteportfolio/node_modules/
+
+# Ignore build output
+viteportfolio/dist/
+
+# Ignore environment files
+viteportfolio/.env
+viteportfolio/.env.*.local
+
+# System files
+.DS_Store
+Thumbs.db
