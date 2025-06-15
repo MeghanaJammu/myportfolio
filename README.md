@@ -1,3 +1,6 @@
+DEPLOYED URL - https://portfoliodeployment-gamma.vercel.app/
+
+
 # 💻 Meghana Jammu's Portfolio
 
 A personal portfolio website to showcase my work, skills, and contact information. This project highlights my capabilities as a Full Stack Developer, ML Developer, and Chemist — built with modern frontend tools and creative 3D integration.
